@@ -1,1 +1,10 @@
-<p>user-list works!</p>
+<ul>
+    <li *ngFor="let user of users; index as i">
+        <span *ngIf="i % 2 === 0" style="background-color: pink;">
+            Name: {{user.name}} and {{user.age}} y/o
+        </span>
+        <span *ngIf="i % 2 !== 0" style="background-color: greenyellow;">
+            Name: {{user.name}} and {{user.age}} y/o
+        </span>
+    </li>
+</ul>
