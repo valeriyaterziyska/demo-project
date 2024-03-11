@@ -1,0 +1,9 @@
+.background-green {
+    background-color: green;
+}
+
+.shiny {
+    background-color: rgb(235, 235, 72);
+    color: white;
+    font-size: 30px;
+}

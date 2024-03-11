@@ -11,8 +11,6 @@ type User = {
   styleUrls: ['./user-list.component.css']
 })
 export class UserListComponent {
-  isToggle = false;
-
   users = [
     { name: 'Pesho', age: 18 },
     { name: 'Mitko', age: 24 },
@@ -20,10 +18,4 @@ export class UserListComponent {
     { name: 'Yoanna', age: 35 },
     { name: 'Dimitar', age: 36 }
   ] as User[];
-
-  handleClick(event: Event) {
-    console.log('clicked!', event);
-    this.isToggle = !this.isToggle;
-  }
-
 } 
