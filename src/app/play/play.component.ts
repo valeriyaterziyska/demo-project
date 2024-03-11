@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 
 const IMG_URL = 'https://t4.ftcdn.net/jpg/00/97/58/97/360_F_97589769_t45CqXyzjz0KXwoBZT9PRaWGHRk5hQqQ.jpg';
 
@@ -8,6 +8,8 @@ const IMG_URL = 'https://t4.ftcdn.net/jpg/00/97/58/97/360_F_97589769_t45CqXyzjz0
   styleUrls: ['./play.component.css']
 })
 export class PlayComponent implements OnInit, OnDestroy {
+  @Input('color') colorValue = 'white';
+
   isToggle = false;
   greenBackground = 'background-green';
   imageUrl = IMG_URL;
